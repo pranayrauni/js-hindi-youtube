@@ -1,11 +1,14 @@
 const name = "hitesh"
 const repoCount = 50
+console.log(name[0])        //string ko v array ki tarah access kar sakte
 
 // console.log(name + repoCount + " Value");
 
-console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
+console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);   //string interppolation
 
 const gameName = new String('hitesh-hc-com')
+// ye object hai aur key value pair m.. esme length property milti aur v bahut methods milte
+// console.log(typeof gameName)
 
 // console.log(gameName[0]);
 // console.log(gameName.__proto__);
@@ -32,4 +35,5 @@ console.log(url.replace('%20', '-'))
 
 console.log(url.includes('sundar'))
 
-console.log(gameName.split('-'));
+console.log(gameName.split('-'));     // [ 'hitesh', 'hc', 'com' ]
+// split k help se string ko tod k array bna sakte tute huye string ka

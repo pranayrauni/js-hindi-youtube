@@ -3,22 +3,25 @@ let score = "hitesh"
 //console.log(typeof score);
 //console.log(typeof(score));
 
-let valueInNumber = Number(score)
+let valueInNumber = Number(score)     //Number m convert 
 //console.log(typeof valueInNumber);
 //console.log(valueInNumber);
 
 
 // "33" => 33
-// "33abc" => NaN
+// "33abc" => NaN      //typeof NaN is number
 //  true => 1; false => 0
+// null => 0;
+// undefined => NaN
+// string => NaN
 
 let isLoggedIn = "hitesh"
 
-let booleanIsLoggedIn = Boolean(isLoggedIn)
+let booleanIsLoggedIn = Boolean(isLoggedIn)   //boolean m convert
 //  console.log(booleanIsLoggedIn);
 
 // 1 => true; 0 => false
-// "" => false
+// "" => false       //empty string
 // "hitesh" => true
 
 let someNumber = 33
@@ -36,7 +39,7 @@ let negValue = -value
 // console.log(2+2);
 // console.log(2-2);
 // console.log(2*2);
-// console.log(2**3);
+// console.log(2**3);    //power
 // console.log(2/3);
 // console.log(2%3);
 
@@ -53,7 +56,7 @@ let str3 = str1 + str2
 
 // console.log( (3 + 4) * 5 % 3);
 
-// console.log(+true);
+// console.log(+true);    //aage plus lga dene se conversion ho jata par acha nhi hai
 // console.log(+"");
 
 let num1, num2, num3

@@ -2,7 +2,7 @@ const accountId = 144553
 let accountEmail = "hitesh@google.com"
 var accountPassword = "12345"
 accountCity = "Jaipur"
-let accountState;
+let accountState;       //agar declare kar l chor denge to undefined print hoga 
 
 // accountId = 2 // not allowed
 
