@@ -13,6 +13,7 @@ if (true) {
 // console.log(b);
 // console.log(c);
 
+// node k through aur browser console ka global scope alag hai
 
 function one(){
     const username = "hitesh"
@@ -52,7 +53,7 @@ function addone(num){
 
 
 
-addTwo(5)
+addTwo(5)          // variable declare hone se phale hi access kar rhe to error degga
 const addTwo = function(num){
     return num + 2
 }

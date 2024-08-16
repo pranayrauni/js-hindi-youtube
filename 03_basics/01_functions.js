@@ -8,7 +8,7 @@ function sayMyName(){
     console.log("H");
 }
 
-// sayMyName()
+// sayMyName()            // bina () ka function ka reference hota
 
 // function addTwoNumbers(number1, number2){
 
@@ -27,7 +27,7 @@ const result = addTwoNumbers(3, 5)
 // console.log("Result: ", result);
 
 
-function loginUserMessage(username = "sam"){
+function loginUserMessage(username = "sam"){      // username default sam de diya gya agar kuch pass nhi kiya to
     if(!username){
         console.log("PLease enter a username");
         return
@@ -39,7 +39,7 @@ function loginUserMessage(username = "sam"){
 // console.log(loginUserMessage("hitesh"))
 
 
-function calculateCartPrice(val1, val2, ...num1){
+function calculateCartPrice(val1, val2, ...num1){     // parameter m sirf ...num1 rahega to ek hi array m sab aa jayga warna kuch val m jayga baki num1 m
     return num1
 }
 
@@ -54,8 +54,8 @@ function handleObject(anyobject){
     console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
 }
 
-// handleObject(user)
-handleObject({
+// handleObject(user)     // function call m argument object ka dala gya hai
+handleObject({           // function call m hi object declare hai
     username: "sam",
     price: 399
 })
@@ -63,7 +63,7 @@ handleObject({
 const myNewArray = [200, 400, 100, 600]
 
 function returnSecondValue(getArray){
-    return getArray[1]
+    return getArray[1]         // yaha jo aaya hai usko m se access karna hai
 }
 
 // console.log(returnSecondValue(myNewArray));
