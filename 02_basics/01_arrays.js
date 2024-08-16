@@ -1,4 +1,7 @@
-// array
+// array - resizeable. mix of different data types. copy operation creates shallow copies.
+// shallow copy- copy whose properties share the same refernce as those of source.
+// deep copy -  copy whose properties do not share the same refernce as those of source.
+
 
 const myArr = [0, 1, 2, 3, 4, 5]
 const myHeors = ["shaktiman", "naagraj"]
@@ -12,13 +15,13 @@ const myArr2 = new Array(1, 2, 3, 4)
 // myArr.push(7)
 // myArr.pop()
 
-// myArr.unshift(9)
-// myArr.shift()
+// myArr.unshift(9)      // starting m add kar dega 9
+// myArr.shift()         // shift se remove ho jayga
 
 // console.log(myArr.includes(9));
 // console.log(myArr.indexOf(3));
 
-// const newArr = myArr.join()
+// const newArr = myArr.join()    // array k sare elements ko lega aur join kar k string bna dega
 
 // console.log(myArr);
 // console.log( newArr);
@@ -37,3 +40,7 @@ console.log("B ", myArr);
 const myn2 = myArr.splice(1, 3)
 console.log("C ", myArr);
 console.log(myn2);
+
+
+// slice - last index include nhi hota aur original array m koi change nhi hota
+//splice - last index include hota aur original array m v change ho jata baki bacha hua sirf rahega
