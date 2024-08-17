@@ -17,7 +17,7 @@ switch (month) {
         console.log("feb");
         break;
     case "march":
-        console.log("march");
+        console.log("march");          // jaha v case match ho jayga ur agar uske baad break nhi hai to niche ka sara case execute hoga except default
         break;
     case "april":
         console.log("april");
