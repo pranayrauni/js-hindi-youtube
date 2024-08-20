@@ -6,13 +6,25 @@
 //     return item
 // } )
 
-// console.log(values);
+// console.log(values);      //  forEach kuch return nhi karta ... undefined print hoga
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+myNums.filter((num) => {
+  // console.log(num)        // sara print kar dega 
+})
+
+// foEach ka kaam filter v kar sakta aur filter ka kaam forEach... koi v use kar sakte.. par agar filter kar k kuch part hi chahiye array ka tab filter hi use kar lo.. sara chahiye to foreach 
+// filter return karta hai to esko store kar sakte par forEach return nhi karta
 
 // const newNums = myNums.filter( (num) => {
 //     return num > 4
 // } )
+// console.log(newNums)
+
+
+
+// filter wala kaam forEach lga k kiya gya hai niche.. pahle naya empty array le k fir push karo
 
 // const newNums = []
 

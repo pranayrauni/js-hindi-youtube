@@ -1,6 +1,6 @@
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
-// coding.forEach( function (val){
+// coding.forEach( function (val){         // ye callback function leta hai aur callback function ka naam nhi hota.. val har ek value ka naam hai
 //     console.log(val);
 // } )
 
@@ -12,9 +12,9 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 //     console.log(item);
 // }
 
-// coding.forEach(printMe)
+// coding.forEach(printMe)     // function ko ya to yahi likh lo ya kahi aur likh k call kar lo.. yaha function ka reference dena hai
 
-// coding.forEach( (item, index, arr)=> {
+// coding.forEach( (item, index, arr)=> {      // har baar eske pass item index aur pura array ka access hota
 //     console.log(item, index, arr);
 // } )
 
@@ -37,3 +37,11 @@ myCoding.forEach( (item) => {
     
     console.log(item.languageName);
 } )
+
+
+// forEach loop k jagah aise v kar sakte par forEach jyada common hai
+for (let index = 0; index < myCoding.length; index++) {
+    const element = myCoding[index];
+    console.log(element.languageFileName)
+    
+}
