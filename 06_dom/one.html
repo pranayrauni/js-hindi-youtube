@@ -29,3 +29,127 @@
     </div>
 </body>
 </html>
+
+
+<!-- browser console m agar console.log(window) likhenge to kafi sari chije dega jaise redux geo document etc.. window k object hai..  -->
+<!-- console.log(document) karne se documents dikhega html -->
+<!-- console.dir(document) karne se bahut sari document ki properties milegi -->
+
+
+
+<!--                DOCUMENT OBJECT MODEL -->
+
+<!-- window -> document -> html -> head -> title ->  text node
+                          |        |
+                          |         ->meta -> atribute
+                          |
+                          -> body -> div --h1 -> text node
+                                           |
+                                           -> p -> text node                 
+
+                                           
+-->
+
+
+
+
+<!-- browser console m console.log(document.link) karne pe sare link dega browser console m...
+  ye html collection hoga esko array m convert kar sakte par default array nhi hai to map foreach property nhi hai enke pass
+  par array hai to link by number find kar sakte..  console.links[2] 
+-->
+
+<!-- document.getElementById('firstHeading').innerHTML = <h1>chai aur code</h1>  
+    document select kar liye getElementById se fir uska innerHTML replace kar diye ab chai aur code print hoga 
+-->
+
+<!-- document.getElementById('title')      ye title id se element select kar lega-->
+ <!-- document.getElementById('firstHeading').id     dot lga k element ka value access kar sakte yaha pe id hi access kiya gya aur result m title aayga -->
+
+ <!-- document.getElementById('title').className    ye class btayga -->
+
+ <!-- document.getElementById('title').getAttribute('class')       ye v class btayga -->
+
+
+ <!-- class already set hai par fir v hm yaha set kar k dekhte hai
+  
+        document.getElementById('title').setAttribute('class', 'test')   es se classname overwrite  ho jayga
+
+        par overwrite hiba shi nhi hai esliye 2 class set kar do
+
+        document.getElementById('title').setAttribute('class', 'heading test')        heading oichla wala hai aur test new wala
+ -->
+
+
+ <!-- esy access k liye  ek variable m store kar sakte hai taki usse aur value nikalwa sake
+
+    const title = document.getElementById('title')
+
+    title.style.backgroundColor = 'green'
+
+    title.style.padding = "15px"
+
+    title.style.borderRadius = "15px"
+
+    title.textContent => jo sara text aayga wo v jo display none kar k hata diya gya hai... html tag ko support nhi karta
+    
+    title.innerText => esme wahi aayga jo visible hoga... html tag ko support nhi karta
+
+    title.innerHTML => esme tile id m jo v html likha hoga wo sab dega aur jaise h1 k andar koi aur html jaise span likha hoga to v aa jayga...esliye attribute set karte time innerHTML 
+    use karte taki h1 h2 wagera v de sake... matlab html tag ko support karta
+
+ -->
+
+
+ <!-- document.querySelector('h2')
+      
+      document.querySelector('#title')   => id select
+
+      document.querySelector('.heading')   => class select
+
+      document.querySelector('input[type="password"]')   => attribute select
+
+      sare css selectors kaam karta hia yaha jaise
+
+      document.querySelector('p:first-child')
+ -->
+
+
+ <!-- 
+    const myul = document.querySelector('ul')
+
+    const turnGreen = myul.querySelector('li')
+
+    turnGreen.style.backgroundColor = "green"
+
+    turnGreen.innerText
+ -->
+
+
+ <!-- 
+ 
+    document.querySelectorAll('li')   => ye ek nodeList dega.. ye array nhi hai par array jaisa dikhta hai..array ki kuch properties jaise forEach , key value, enteries wagera lga sakte.. map nhi lga sakte
+
+    const tempLiList = document.querySelectorAll('li')
+
+    tempLiList[0].style.color = 'green'      => btana padega list m kisko pe operate karna hai
+ 
+    querySelectorAll nodeList dega aur wahi apply hoga jo upar nodeList k bare m likha hai chahe fir ek hi item kyun n ho nodeList m
+
+    nodeList ko array m convert kar k kuch v lga sakte
+ -->
+
+
+ <!-- 
+ 
+    const tempClassList = document.getElementByClassName('list-item')    => ye ek html collection dega espe array ki use karne k liye array m convert karna padega
+
+    Array.from(tempClassList)     => array m convert dega ab array ki sari chije apply kar sakte jaise forEach, map etc
+
+    const convertedArray = Array.from(tempClasslist)
+
+    convertedArray.forEach((li) => li.style.color = 'orange')
+
+    
+
+ 
+ -->
