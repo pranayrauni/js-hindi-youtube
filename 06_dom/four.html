@@ -12,14 +12,16 @@
     </ul>
 </body>
 <script>
-    function addLanguage(langName){
+    function addLanguage(langName){            // list create kar k add kiya gya hai.. function use taki baar baar likhna n pade
         const li = document.createElement('li');
         li.innerHTML = `${langName}`
         document.querySelector('.language').appendChild(li)
     }
     addLanguage("python")
     addLanguage("typescript")
-
+    
+    // upar wale method m jinti bar add karenge utni baar tree travserse karni hogi esliye optimize karo niche wale tarike se
+    
     function addOptiLanguage(langName){
         const li = document.createElement('li');
         li.appendChild(document.createTextNode(langName))
@@ -30,12 +32,12 @@
     //Edit
     const secondLang = document.querySelector("li:nth-child(2)")
     console.log(secondLang);
-    //secondLang.innerHTML = "Mojo"
+    //secondLang.innerHTML = "Mojo"         // es tarike se  kar sakte par ye optimize nhi hai... replace karte time dhyan dena hai ki querySelctor se agar pura element select hua hai to pura element add karna hai
     const newli = document.createElement('li')
     newli.textContent = "Mojo"
     secondLang.replaceWith(newli)
 
-    //edit
+    //edit - es tarike se v kar sakte
     const firstLang = document.querySelector("li:first-child")
     firstLang.outerHTML = '<li>TypeScript</li>'
 

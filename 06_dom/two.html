@@ -18,10 +18,10 @@
 <script>
     const parent = document.querySelector('.parent')
     // console.log(parent);              // parent class aayga
-    // console.log(parent.children);     // HTMLCollection aayga 
+    // console.log(parent.children);     // HTMLCollection aayga..querySelector se parent div ko select kar k usko dot laga k children divs ko access akr sakte  
     // console.log(parent.children[1].innerHTML);
 
-    // for (let i = 0; i < parent.children.length; i++) {
+    // for (let i = 0; i < parent.children.length; i++) {     // normal for loop chalega html collection pe
     //      console.log(parent.children[i].innerHTML);
         
     // }
@@ -29,11 +29,13 @@
     // console.log(parent.firstElementChild);
     // console.log(parent.lastElementChild);
 
-    const dayOne = document.querySelector('.day')
+    const dayOne = document.querySelector('.day')    // child select kar k parent pe v jaa sakte
     // console.log(dayOne);
     // console.log(dayOne.parentElement);
     // console.log(dayOne.nextElementSibling);
 
-    console.log("NODES: ", parent.childNodes);
+    console.log("NODES: ", parent.childNodes);    // ye nodeList dega jisme 9 ka list hoga... par parent m 4 hi child likha hai hamne aur ye 9 esliye dikha rha kyuki
+    // DOM tree structure hai esme chij ki importance hai... har div k baad ek enter hua hai jo text node hai...  har parent/element ka child node hota...
+    // agar bich ek se jyada line kav space denge to v ek space count hoga..but agar cooment likhenge ek line k a to 2 badh jyga nodeList m
 </script>
 </html>

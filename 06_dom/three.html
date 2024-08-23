@@ -14,10 +14,11 @@
     console.log(div);
     div.className = "main"
     div.id = Math.round(Math.random() * 10 + 1)
-    div.setAttribute("title", "generated title")
+    div.setAttribute("title", "generated title")     // class id k alawa dusra attribute v set kar sakte key value de k jaise yaha title
     div.style.backgroundColor = "green"
     div.style.padding = "12px"
-    // div.innerText = "Chai aur code"
+    // div.innerText = "Chai aur code"         // jisme dot lga k access karte hai usme pahle element ko pakad k overwrite kiya jata hai par 
+    //  jab node hmlog craete karenge to usme ek round trip ko pakadne wala hai wo bachega par usko fir append karna padega parent m
     const addText = document.createTextNode("Chai aur code")
     div.appendChild(addText)
 
