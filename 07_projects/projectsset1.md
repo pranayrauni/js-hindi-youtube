@@ -16,7 +16,7 @@ buttons.forEach(function (button) {
   console.log(button);
   button.addEventListener('click', function (e) {
     console.log(e);
-    console.log(e.target);
+    console.log(e.target);               // e.target se pta chalta ki event kaha se aa rha
     if (e.target.id === 'grey') {
       body.style.backgroundColor = e.target.id;
     }
@@ -39,14 +39,14 @@ buttons.forEach(function (button) {
 ## project 2 solution
 
 ```javascript
-const form = document.querySelector('form');
+const form = document.querySelector('form');          // form select karna padega kyuki form k andar hi sabkuch hai
 // this usecase will give you empty
-// const height = parseInt(document.querySelector('#height').value)
+// const height = parseInt(document.querySelector('#height').value)  // height weight bahar nhi rakh sakte kyuki load hote hi empty value le lega
 
 form.addEventListener('submit', function (e) {
   e.preventDefault();
 
-  const height = parseInt(document.querySelector('#height').value);
+  const height = parseInt(document.querySelector('#height').value);   // parseInt se string ko integer m convert kiya jaa rha
   const weight = parseInt(document.querySelector('#weight').value);
   const results = document.querySelector('#results');
 
@@ -153,7 +153,7 @@ function displayMessage(message) {
 
 function endGame() {
   userInput.value = '';
-  userInput.setAttribute('disabled', '');
+  userInput.setAttribute('disabled', '');      // disabled key value pair m set hote hai but aise v likh dene se ho jayenge par problem na ho esliye value m kuch n dalo
   p.classList.add('button');
   p.innerHTML = `<h2 id="newGame">Start new Game</h2>`;
   startOver.appendChild(p);

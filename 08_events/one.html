@@ -19,7 +19,7 @@
    </div>
 </body>
 <script>
-    // document.getElementById('owl').onclick = function(){
+    // document.getElementById('owl').onclick = function(){    // id pe onclick lgane pe jyada information (features) ni milte so event listener lgana chahiye
     //     alert("owl clicked")
     // }
 
@@ -31,12 +31,26 @@
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
 
+    // eventListener se mostly bowser aur environment k event milte
+
+    // questions: jaha v user ne click kiya waha ek circle create kar do ya height width btao
+
+    // event se "false" default lga hota hai
+    // event propagation: event bubbling(default false) and event capturing
+    
+    // event bubbling: niche se upar ki traf; ye false k case m hota
+    // event capturing: upar se niche ki taraf; ye true k case m hota
+
     // document.getElementById('images').addEventListener('click', function(e){
     //     console.log("clicked inside the ul");
     // }, false)
 
     // document.getElementById('owl').addEventListener('click', function(e){
     //     console.log("owl clicked");
+
+    // owl ul k andar hai to event bubbling k karan upar jayga event aur pahle owl fir ul clicked hoga; agar true hota to eska ulta hota
+    //  event bubbling rokne k liyr stopPropagation use kar lenge
+    
     //     e.stopPropagation()
     // }, false)
     
