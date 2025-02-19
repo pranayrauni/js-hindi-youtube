@@ -3,11 +3,11 @@ function multipleBy5(num){
     return num*5
 }
 
-multipleBy5.power = 2
+multipleBy5.power = 2                // yaha pe dot lga k function ko object ki tarah use kiya gya hai
 
 console.log(multipleBy5(5));
 console.log(multipleBy5.power);
-console.log(multipleBy5.prototype);
+console.log(multipleBy5.prototype);      // ye empty object dega... prototype ka default context k method ka this jo hai wo empty parenthesis{} hai
 
 function createUser(username, score){
     this.username = username

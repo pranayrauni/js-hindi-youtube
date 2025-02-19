@@ -26,7 +26,7 @@ Object.defineProperty(chai, 'name', {
 
 console.log(Object.getOwnPropertyDescriptor(chai, "name"));
 
-for (let [key, value] of Object.entries(chai)) {
+for (let [key, value] of Object.entries(chai)) {              // object m iterate karna hai to enteries le k iterate kar sakte
     if (typeof value !== 'function') {
         
         console.log(`${key} : ${value}`);

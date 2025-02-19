@@ -8,9 +8,9 @@ class User {
     }
 }
 
-class Teacher extends User{
+class Teacher extends User{             // user teacher ban rha hai
     constructor(username, email, password){
-        super(username)
+        super(username)                      // super keyword extended class m jayga apne sath this le k fir username set kar dega   
         this.email = email
         this.password = password
     }
@@ -22,9 +22,11 @@ class Teacher extends User{
 
 const chai = new Teacher("chai", "chai@teacher.com", "123")
 
-chai.logMe()
+chai.addCourse()
+chai.logMe()         // teacher k pass logMe ka access  hai
 const masalaChai = new User("masalaChai")
 
-masalaChai.logMe()
+masalaChai.logMe()     // user k pass logme k a access hai
+masalaChai.addCourse()   // no accesss
 
 console.log(chai instanceof User);

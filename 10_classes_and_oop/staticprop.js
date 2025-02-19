@@ -7,7 +7,7 @@ class User {
         console.log(`Username: ${this.username}`);
     }
 
-    static createId(){
+    static createId(){                     // jab es method ka access har us object ko nhi dena chahte jo es class se instanciate hua hai to static keyword use karo
         return `123`
     }
 }
